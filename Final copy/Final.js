@@ -36,9 +36,6 @@ function draw() {
   bat.position.y = constrain(mouseY, bat.height/2, height-bat.height/2);
   bat.position.x = constrain(mouseX+100, bat.height/2, height-bat.height/2);
 
-//  ball.bounce(wallTop);
-//  ball.bounce(wallBottom);
-  
   
   if(ball.bounce(bat)) {
     var swing = (ball.position.x-bat.position.x)/3;
